@@ -1,0 +1,15 @@
+BDEPEND=dev-lang/perl test? ( virtual/perl-Test-Simple )
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-perl/DBIx-Safe dev-perl/DBD-Pg dev-lang/perl
+DESCRIPTION=An asynchronous PostgreSQL replication system
+EAPI=8
+HOMEPAGE=http://bucardo.org/wiki/Bucardo
+IUSE=test
+KEYWORDS=amd64 x86
+LICENSE=BSD
+RDEPEND=dev-perl/DBIx-Safe dev-lang/perl:=
+RESTRICT=test !test? ( test )
+SLOT=0
+SRC_URI=http://bucardo.org/downloads/Bucardo-5.4.1.tar.gz
+_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	perl-functions	fea344a91ebf37efadf172c6a3de5a72	perl-module	bd9574a79c5f0a347a9ea3db5ad9ca72	readme.gentoo-r1	c9646d622541c023f5159b86a14e930c
+_md5_=19361a45f9185844c8996f4fea7230f5

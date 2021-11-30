@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<use>
+		<flag name="otf">Install the OpenType version of the font</flag>
+		<flag name="ttf">Install the TrueType version of the font</flag>
+	</use>
+	<stabilize-allarches/>
+</pkgmetadata>
