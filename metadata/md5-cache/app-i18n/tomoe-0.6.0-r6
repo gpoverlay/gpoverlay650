@@ -1,0 +1,16 @@
+BDEPEND=dev-util/glib-utils dev-util/gtk-doc-am dev-util/intltool virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/glib:2 hyperestraier? ( app-text/hyperestraier ) mysql? ( dev-db/mysql-connector-c:= ) ruby? ( ruby_targets_ruby25? ( dev-lang/ruby:2.5 dev-ruby/ruby-glib2[ruby_targets_ruby25] ) ruby_targets_ruby26? ( dev-lang/ruby:2.6 dev-ruby/ruby-glib2[ruby_targets_ruby26] ) ruby_targets_ruby27? ( dev-lang/ruby:2.7 dev-ruby/ruby-glib2[ruby_targets_ruby27] ) ) subversion? ( dev-vcs/subversion )
+DESCRIPTION=Japanese handwriting recognition engine
+EAPI=7
+HOMEPAGE=http://tomoe.osdn.jp/
+IUSE=hyperestraier mysql ruby ruby_targets_ruby25 ruby_targets_ruby26 ruby_targets_ruby27 subversion
+KEYWORDS=amd64 x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-libs/glib:2 hyperestraier? ( app-text/hyperestraier ) mysql? ( dev-db/mysql-connector-c:= ) ruby? ( ruby_targets_ruby25? ( dev-lang/ruby:2.5 dev-ruby/ruby-glib2[ruby_targets_ruby25] ) ruby_targets_ruby26? ( dev-lang/ruby:2.6 dev-ruby/ruby-glib2[ruby_targets_ruby26] ) ruby_targets_ruby27? ( dev-lang/ruby:2.7 dev-ruby/ruby-glib2[ruby_targets_ruby27] ) ) subversion? ( dev-vcs/subversion )
+REQUIRED_USE=ruby? ( ^^ ( ruby_targets_ruby25 ruby_targets_ruby26 ruby_targets_ruby27 ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/tomoe/tomoe-0.6.0.tar.gz
+_eclasses_=autotools	c9df06c186913b43eb211100ef5fe2cf	gnuconfig	262062cef0ba4f22b397193da514a350	libtool	241a8f577b9781a42a7421e53448a44e	multilib	4b66d835ec72e021e359bb81eacfe988	ruby-utils	08ae6f9c60b19aabce3f66a30cce9a2d	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa
+_md5_=40bbbb077752560e321df7e43f775b07
